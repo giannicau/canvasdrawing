@@ -14,7 +14,7 @@ function saveImage(){
 	request.send('img='+data);
 	
 	request.onreadystatechange = function(){
-		if(request.readyState == 4 && request.status = 200){
+		if(request.readyState == 4 && request.status == 200){
 			var responde = request.responseText;
 			window.open(response, '_blank','location=0','menubar=0');
 	
