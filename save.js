@@ -15,8 +15,8 @@ function saveImage(){
 	
 	request.onreadystatechange = function(){
 		if(request.readyState == 4 && request.status == 200){
-			var responde = request.responseText;
-			window.open(response, '_blank','location=0','menubar=0');
+			var response = request.responseText;
+			window.open('download.php?file='+response, '_blank','location=0','menubar=0');
 	
 		}
 	}
