@@ -6,8 +6,9 @@ function saveImage(){
 	
 	var data = canvas.toDataURL();
 	//aprire l'immagine come popup
-	//window.open(data, '_blank','location=0','menubar=0');
+	window.open(data, '_blank','location=0','menubar=0');
 	
+	/*
 	var request = new XMLHttpRequest();
 	
 	
@@ -25,6 +26,8 @@ function saveImage(){
 	request.open('POST','save.php',true);
 	request.setRequestHeader('Content-type','application/x-www-form-urlencoded');
 	request.send('img ='+data);
+	
+	*/
 	
 	
 }
