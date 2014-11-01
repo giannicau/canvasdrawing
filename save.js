@@ -18,6 +18,8 @@ function saveImage(){
 			//window.open('download.php?file='+response, '_blank','location=0','menubar=0');
 	
 		}
+		
+		console.log('nn funge');
 	}
 	
 	request.open('POST','save.php',true);
