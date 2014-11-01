@@ -11,7 +11,7 @@ if(file_put_contents($path, $img)){
 
 	print $path;
 } else {
-	header("HTTP/1.1 500 Internal Server Error");
+	header("HTTP/1.1 500 Interna Server Error"+$path);
 }
 
 
