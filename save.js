@@ -27,7 +27,7 @@ function saveImage(){
 	request.setRequestHeader('Content-type','application/x-www-form-urlencoded');
 	request.send('img='+data);
 	
-	*/
+	
 	
 	
 }
