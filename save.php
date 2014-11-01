@@ -5,24 +5,19 @@ $data = str_replace(' ','+',$data);
 
 $img = base64_decode($data);
 $path = 'images/' . uniqid() . '.png';
-<<<<<<< HEAD
-header("HTTP/1.1 200 Ok Internal ");
-/*
-if(file_put_contents($path, $img)){
-=======
 
-header("HTTP/1.1 200 Ok Internal ");
-/*if(file_put_contents($path, $img)){
->>>>>>> 856dc04b2bbfcc585d9859c7e859953819a4bdc1
+
+
+if(file_put_contents($path, $img)){
+
+
+if(file_put_contents($path, $img)){
+
 	print $path;
 } else {
 	header("HTTP/1.1 500 Internal Server Error");
 }
 
-*/
 
-<<<<<<< HEAD
 ?>
-=======
-?>
->>>>>>> 856dc04b2bbfcc585d9859c7e859953819a4bdc1
+
