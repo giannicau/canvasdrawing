@@ -8,7 +8,7 @@ $path = 'images/' . uniqid() . '.png';
 
 
 
-if(file_put_contents($path, $img)){
+
 
 
 if(file_put_contents($path, $img)){
