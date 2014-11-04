@@ -7,7 +7,7 @@ var canvas = document.getElementById('canvas'),
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-window.onresize() =  function{
+window.onresize =  function{
 	var image = context.getImageData(0,0,canvas.width,canvas.height);
 	canvas.width = window.innerWidth;
 	canvas.height = window.innerHeight;
