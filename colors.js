@@ -1,4 +1,4 @@
-var colors = ['black','blue','red','green','yellow'];
+var colors = ['black','blue','red','green','white'];
 //per aggiungere un colore basta aggiungerlo semplicemente nell'array
 
 /*var swatches = document.getElementsByClassName('swatch');

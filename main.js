@@ -7,6 +7,17 @@ var canvas = document.getElementById('canvas'),
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+window.onresize() =  function{
+	var image = context.getImageData(0,0,canvas.width,canvas.height);
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	context.putImageData(image,0,0);
+}
+
+function clearCanvas(canvas){
+	canvas.width= canvas.width;
+}
+
 context.lineWidth = radius*2;
 
 var putPoint = function(e){
