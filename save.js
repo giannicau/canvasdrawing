@@ -16,7 +16,7 @@ function saveImage(){
 			var response = request.responseText;
 			console.log(response);
 			//window.open('download.php?file='+response, '_blank','location=0','menubar=0');
-	        document.getElementById('downloadframe').src='download.php?file='+response;
+	        document.getElementById('downloadframe').src ='download.php?file='+response;
 		}
 		
 		//console.log('nn funge');
