@@ -13,12 +13,12 @@ function saveImage(){
 	
 	
 	request.onreadystatechange = function(){
-		//if(request.readyState == 4 && request.status == 200){
+		if(request.readyState == 4 && request.status == 200){
 			var response = request.responseText;
 			console.log(response);
 			window.open(response, '_blank','location=0','menubar=0');
 	
-		//}
+		}
 		
 		console.log('nn funge');
 	}
