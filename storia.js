@@ -34,7 +34,7 @@ function cUndo() {
         console.log('undo : '+canvasPic);
     }
 	
-	if (cStep < 0) {
+	if (cStep == 0) {
 		clearCanvas();
 	}
 }
