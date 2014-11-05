@@ -20,14 +20,18 @@ resetButton.addEventListener('click', resetta);
 
 function resetta(){
 	clearCanvas(canvas);
+	
+	
+	
 	//console.log('resetta');
 	
 	
 }
 
 function clearCanvas(canvas){
-	canvas.width= canvas.width;
+	//canvas.width= canvas.width;
 	//canvas.width = window.innerWidth;
+	context.clearRect ( 0 , 0 , canvas.width , canvas.height );
 	
 	
 }
@@ -56,7 +60,7 @@ var engage = function(e){
 }
 
 var disengage = function(){
-	cPush();
+	cPush(); //memorizzo immagine nell'array per undo e redo
 	isDragging = false;
 	context.beginPath();
 }
