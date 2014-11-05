@@ -16,9 +16,9 @@ canvas.height = window.innerHeight;
 }*/
 
 function clearCanvas(canvas){
-	//canvas.width= canvas.width;
+	canvas.width= canvas.width;
 	//canvas.width = window.innerWidth;
-	context.clearRect(0, 0, canvas.width, canvas.height);
+	
 	
 }
 

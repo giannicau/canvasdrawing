@@ -35,7 +35,7 @@ function cUndo() {
     }
 	
 	if (cStep == 0) {
-		clearCanvas();
+		clearCanvas(canvas);
 	}
 }
 function cRedo() {
