@@ -28,37 +28,40 @@
             ul.tlbar li a { 
                 float:left;
                 cursor:pointer;
-                width:50px;
-                height:50px;
+                width:52px;
+                height:52px;
                 opacity: 0.6;
             }		
             ul.tlbar li a:hover {                
                 opacity: 1.0;
             }
-            a.label{
+            a.opzioni{
                 background:#fff url(icons/label.png) no-repeat center center;
             }
-            a.fav{
+			
+			a.gomma{
                 background:#fff url(icons/favorite.png) no-repeat center center;
             }
-            a.shop{
-                background:#fff url(icons/shopping_cart.png) no-repeat center center;
-            }
-            a.zoomin{
+            
+            a.undo{
                 background:#fff url(icons/zoom_in.png) no-repeat center center;
             }
-            a.zoomout{
+            a.redo{
                 background:#fff url(icons/zoom_out.png) no-repeat center center;
             }
-            a.fullscreen{
+            a.salva{
                 background:#fff url(icons/fullscreen.png) no-repeat center center;
             }
-            a.info{
+            a.reset{
                 background:#fff url(icons/info.png) no-repeat center center;
             }
-            a.edit{
+            a.radius{
                 background:#fff url(icons/edit.png) no-repeat center center;
             }
+			 a.colori{
+                background:#fff url(icons/edit.png) no-repeat center center;
+            }
+			 
 
             
 </style>
@@ -69,13 +72,14 @@
 <body style='margin : 0'>
 
 <ul class="tlbar transparent" >
-                <li><a class="zoomin" onclick="alert('ciao zoom');"></a></li>
-                <li><a class="zoomout"></a></li>
-                <li><a class="shop"></a></li>
-                <li><a class="fav"></a></li>
-                <li><a class="edit"></a></li>
-                <li><a class="label"></a></li>
-                <li><a class="info"></a></li>
+                <li><a class="opzioni" onclick="alert('ciao zoom');"></a></li>
+                <li><a class="colori"></a></li>
+                <li><a class="gomma"></a></li>
+                <li><a class="undo"></a></li>
+                <li><a class="redo"></a></li>
+                <li><a class="salva"></a></li>
+                <li><a class="reset"></a></li>
+				<li><a class="radius"></a></li>
 </ul>
 
 
