@@ -21,7 +21,8 @@ var cStep = -1;
 function cPush() {
     cStep++;
     if (cStep < cPushArray.length) { cPushArray.length = cStep; }
-    cPushArray.push(document.getElementById('canvas').toDataURL());
+    cPushArray.push(canvas);
+	console.log('memorizzato canvas : '+canvas);
     
 }
 function cUndo() {
@@ -30,7 +31,7 @@ function cUndo() {
         var canvasPic = new Image();
         canvasPic.src = cPushArray[cStep];
         canvasPic.onload = function () { context.drawImage(canvasPic, 0, 0); }
-        
+        console.log('undo : ');
     }
 }
 function cRedo() {
@@ -39,6 +40,6 @@ function cRedo() {
         var canvasPic = new Image();
         canvasPic.src = cPushArray[cStep];
         canvasPic.onload = function () { context.drawImage(canvasPic, 0, 0); }
-       
+            console.log('redo : ');
     }
 }
