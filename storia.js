@@ -1,7 +1,7 @@
 var annulla = document.getElementById('annulla'),
 	ripristina = document.getElementById('ripristina');
 	
-	var images {};
+	var images = {};
 	
 		
 	
