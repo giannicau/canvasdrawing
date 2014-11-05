@@ -39,7 +39,7 @@ function cRedo() {
         cStep++;
         var canvasPic = cPushArray[cStep];
         context.putImageData(canvasPic,0,0);
-            console.log('redo : '+canvasPic);
+        console.log('redo : '+canvasPic);
     }
 }
 

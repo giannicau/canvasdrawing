@@ -2,7 +2,8 @@ var canvas = document.getElementById('canvas'),
     context = canvas.getContext('2d'),
     radius = 10,
 	isDragging = false;
-	
+
+cPush();//memorizzo il canvas di partenza	
 	
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
