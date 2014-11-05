@@ -16,7 +16,8 @@ canvas.height = window.innerHeight;
 }*/
 
 function clearCanvas(canvas){
-	canvas.width= canvas.width;
+	//canvas.width= canvas.width;
+	canvas.width = window.innerWidth;
 }
 
 context.lineWidth = radius*2;
