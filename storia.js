@@ -38,7 +38,7 @@ function cRedo() {
         cStep++;
         var canvasPic = new Image();
         canvasPic.src = cPushArray[cStep];
-        canvasPic.onload = function () { ctx.drawImage(canvasPic, 0, 0); }
+        canvasPic.onload = function () { context.drawImage(canvasPic, 0, 0); }
        
     }
 }
