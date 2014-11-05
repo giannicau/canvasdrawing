@@ -15,6 +15,9 @@ canvas.height = window.innerHeight;
 	context.putImageData(image,0,0);
 }*/
 
+var reset = document.getElementById('reset');
+reset.addEventListener('click', clearCanvas(canvas) );
+
 function clearCanvas(canvas){
 	canvas.width= canvas.width;
 	//canvas.width = window.innerWidth;
