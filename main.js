@@ -16,7 +16,14 @@ canvas.height = window.innerHeight;
 }*/
 
 var resetButton = document.getElementById('reset');
-resetButton.addEventListener('click', clearCanvas=canvas);
+resetButton.addEventListener('click', resetta);
+
+function resetta(){
+	clearCanvas(canvas);
+	console.log('resetta');
+	
+	
+}
 
 function clearCanvas(canvas){
 	canvas.width= canvas.width;
