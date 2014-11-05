@@ -3,7 +3,7 @@ var canvas = document.getElementById('canvas'),
     radius = 10,
 	isDragging = false;
 
-cPush();//memorizzo il canvas di partenza	
+	
 	
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;

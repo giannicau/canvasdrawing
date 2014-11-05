@@ -33,6 +33,10 @@ function cUndo() {
         context.putImageData(canvasPic,0,0);
         console.log('undo : '+canvasPic);
     }
+	
+	if (cStep < 0) {
+		clearCanvas();
+	}
 }
 function cRedo() {
     if (cStep < cPushArray.length-1) {
