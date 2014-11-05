@@ -20,7 +20,7 @@ resetButton.addEventListener('click', resetta);
 
 function resetta(){
 	clearCanvas(canvas);
-	console.log('resetta');
+	//console.log('resetta');
 	
 	
 }
@@ -88,6 +88,8 @@ canvas.addEventListener('mouseup', disengage);
 				if (this.isDrawing) {
 			        this.touchmove(coors);
 			        this.isDrawing = false;
+					cPush();
+					
 				}
 			}
 		}; //fine drower
