@@ -23,7 +23,7 @@ function cPush() {
     if (cStep < cPushArray.length) { cPushArray.length = cStep; }
 	var imgc = context.getImageData(0,0,canvas.width,canvas.height);
     cPushArray.push(imgc);
-	console.log('memorizzato canvas : '+imgc);
+	//console.log('memorizzato canvas : '+imgc);
     
 }
 function cUndo() {
@@ -43,7 +43,7 @@ function cRedo() {
         cStep++;
         var canvasPic = cPushArray[cStep];
         context.putImageData(canvasPic,0,0);
-        console.log('redo : '+canvasPic);
+        //console.log('redo : '+canvasPic);
     }
 }
 

@@ -4,8 +4,83 @@
 	<title>App per disegnare</title>
 	<link rel="stylesheet" href="main.css">
 	<meta name="viewport" content="width=device-width, height=device-height user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, target-densitydpi=device-dpi">
+
+	
+
+<style>
+                    
+            .transparent{
+                opacity: 0.6;
+            }
+            ul.tlbar{
+                position:fixed;
+                
+                height:52px;
+                margin:0px;
+                padding:0px;
+                background-color:#fff;
+                top:0;
+                list-style-type:none;				
+            }
+            ul.tlbar li{
+                display:inline;                            
+            }
+            ul.tlbar li a { 
+                float:left;
+                cursor:pointer;
+                width:70px;
+                height:52px;
+                opacity: 0.6;
+            }		
+            ul.tlbar li a:hover {                
+                opacity: 1.0;
+            }
+            a.label{
+                background:#fff url(icons/label.png) no-repeat center center;
+            }
+            a.fav{
+                background:#fff url(icons/favorite.png) no-repeat center center;
+            }
+            a.shop{
+                background:#fff url(icons/shopping_cart.png) no-repeat center center;
+            }
+            a.zoomin{
+                background:#fff url(icons/zoom_in.png) no-repeat center center;
+            }
+            a.zoomout{
+                background:#fff url(icons/zoom_out.png) no-repeat center center;
+            }
+            a.fullscreen{
+                background:#fff url(icons/fullscreen.png) no-repeat center center;
+            }
+            a.info{
+                background:#fff url(icons/info.png) no-repeat center center;
+            }
+            a.edit{
+                background:#fff url(icons/edit.png) no-repeat center center;
+            }
+
+            
+</style>
+	
+	
+	
 </head>
 <body style='margin : 0'>
+
+<ul class="tlbar transparent" >
+                <li><a class="zoomin" onclick="alert('ciao zoom');"></a></li>
+                <li><a class="zoomout"></a></li>
+                <li><a class="shop"></a></li>
+                <li><a class="fav"></a></li>
+                <li><a class="edit"></a></li>
+                <li><a class="label"></a></li>
+                <li><a class="info"></a></li>
+</ul>
+
+
+
+
 	<div id="toolbar">
 		<div id="rad">
 			
