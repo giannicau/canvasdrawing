@@ -42,6 +42,7 @@ var engage = function(e){
 }
 
 var disengage = function(){
+	cPush();
 	isDragging = false;
 	context.beginPath();
 }
